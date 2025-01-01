@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <h1 class="mt -5">Admin Page</h1>
+        <form id="pollForm">
+            <div class="form-group">
+                <label for="pollQuestion">Poll Question</label>
+                <input type="text" class="form-control" id="pollQuestion" required>
+            </div>
+            <div class="form-group">
+                <label for="pollOptions">Poll Options (comma separated)</label>
+                <input type="text" class="form-control" id="pollOptions" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Poll</button>
+        </form>
+        <a href="vote.html" class="btn btn-success mt-3">Go to Vote Page</a>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

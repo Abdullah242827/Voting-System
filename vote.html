@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <h1 class="mt-5">Vote for Your Favorite Poll</h1>
+        <form id="voteForm">
+            <div class="form-group">
+                <label for="pollSelect">Select Poll</label>
+                <select class="form-control" id="pollSelect" required></select>
+            </div>
+            <div class="form-group" id="optionsContainer"></div>
+            <button type="submit" class="btn btn-primary">Submit Vote</button>
+            <a href="results.html" class="btn btn-success">View Results</a>
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        a {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 25px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        } -->
+            <style>
+                a:hover {
+            background-color: #0056b3;
+        } 
+            </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+    <h1>Welcome to the Polling System</h1>
+    <p>Select an option below:</p>
+    <div class="navigation-grid">
+    <a href="vote.html"class="nav-card" >Vote</a>
+    <a href="admin.html"class="nav-card" >Admin</a>
+    <a href="results.html"class="nav-card" >View Results</a>
+</div>
+</div>
+</div>
+    <script>
+        // Optional: You can add any JavaScript functionality here if needed
+        // For example, you could track clicks or manage user sessions
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log(`Navigating to ${this.textContent}`);
+            });
+        });
+    </script>
+</body>
+</html>
